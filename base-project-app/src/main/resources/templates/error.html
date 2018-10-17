@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>error</title>
+</head>
+<h2>服务异常</h2>
+<div th:object="${ERROR}">
+    <div th:text="*{time}"></div>
+    <div th:text="*{url}"></div>
+    <div th:text="*{error}"></div>
+    <div th:text="*{statusCode+','+reasonPhrase}"></div>
+    <div th:text="*{stackTrace}"></div>
+</div>
+</body>
+</html>

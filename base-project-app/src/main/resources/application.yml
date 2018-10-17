@@ -1,0 +1,7 @@
+#关闭权限验证
+security:
+  basic:
+    enabled: false
+server:
+  port: 8088
+  servlet-path: /
